@@ -1,0 +1,124 @@
+/* Warna dan gaya untuk elemen navigasi */
+.nav-link {
+  color: black;
+}
+
+.nav-item {
+  font-weight: bold;
+  color: black;
+}
+
+.nav-link:hover {
+  border-bottom: 1px dotted black;
+}
+
+/* Gaya untuk container dan konten */
+.container {
+  background-color: black;
+}
+
+.content {
+  background-color: black;
+}
+
+/* Gaya untuk tombol login */
+.tombol_login {
+  border-radius: 10px;
+  padding: 9% 15% 10% 2%;
+  border-width: 2px;
+  color: green;
+  border-color: green;
+}
+
+.tombol_login:hover {
+  background-color: rgb(32, 120, 32);
+  color: white;
+}
+
+/* Gaya umum */
+.d-flex {
+  margin-right: 1%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+/* Gaya untuk kartu film */
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card img {
+  height: 500px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover img {
+  transform: scale(1.1); /* Efek scaling pada gambar saat dihover */
+}
+
+.card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.card:hover .card-body {
+  visibility: visible;
+  opacity: 1;
+}
+
+.card-title,
+.card-text {
+  color: white;
+}
+
+/* Gaya untuk tombol */
+.btn-primary {
+  color: black; /* Warna teks untuk tombol */
+  border-color: black; /* Warna border untuk tombol */
+}
+
+.btn-primary:hover {
+  color: white; /* Warna teks tombol saat dihover */
+  background-color: rgba(
+    32,
+    120,
+    32,
+    0.8
+  ); /* Warna latar belakang tombol saat dihover */
+  border-color: rgba(32, 120, 32, 0.8); /* Warna border tombol saat dihover */
+}
+
+/* Gaya untuk footer */
+footer {
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+}
+
+.bg-body-tertiary {
+  color: white;
+}
+.promo{
+  background-color: darkgray;
+  /* background-size: 100%; */
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
