@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Bioskop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Bioskop</h1>
+    </header>
+    <div class="dashboard">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="dashboard.php">Jadwal film</a></li>
+                <li>
+                    <a href="#">Kelola <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="manage_movies.php">Kelola Film</a></li>
+                        <li><a href="manage_showtimes.php">Kelola Jadwal Tayang</a></li>
+                        <li><a href="manage_tickets.php">Kelola Tiket</a></li>
+                        <li><a href="manage_users.php">Kelola Pengguna</a></li>
+                    </ul>
+                </li>
+                <li><a href="reports.php">Laporan</a></li>
+                <li><a href="settings.php">Pengaturan</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <h2>Welcome to the Admin Dashboard</h2>
+            <p>Here you can manage all the aspects of your cinema.</p>
+        </main>
+    </div>
+    <script src="js/admin.js"></script>
+</body>
+</html>

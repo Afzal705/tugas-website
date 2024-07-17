@@ -89,8 +89,8 @@ body {
 
 /* Gaya untuk tombol */
 .btn-primary {
-  color: black; /* Warna teks untuk tombol */
-  border-color: black; /* Warna border untuk tombol */
+  color: green; /* Warna teks untuk tombol */
+  border-color: green; /* Warna border untuk tombol */
 }
 
 .btn-primary:hover {
@@ -113,12 +113,3 @@ footer {
 .bg-body-tertiary {
   color: white;
 }
-.promo{
-  background-color: darkgray;
-  /* background-size: 100%; */
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 100px;
-  padding-right: 100px;
-}
-

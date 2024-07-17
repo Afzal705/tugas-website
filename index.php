@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,15 +44,16 @@
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
-                <form class="login ms-2">
-                    <button class="btn btn-primary" type="button">LOGIN</button>
+                <form class="login ms-2" action="login.html" method="get">
+                    <?php if (isset($_SESSION['username'])): ?>
+                        <button class="btn btn-danger" type="button" onclick="window.location.href='logout.php'">LOGOUT</button>
+                    <?php else: ?>
+                        <button class="btn btn-primary" type="submit">LOGIN</button>
+                    <?php endif; ?>
                 </form>
             </div>
         </div>
     </nav>
-    <div class="promo">
-        
-    </div>
     <div class="content">
         <div class="container my-5">
             <div id="filmCarousel" class="carousel slide" data-bs-ride="carousel">

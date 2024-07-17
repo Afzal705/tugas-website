@@ -1,0 +1,77 @@
+/* style_pesan.css */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Warna latar belakang transparan */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+.seat-container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px; /* Jarak antar kursi */
+}
+
+.seat-row {
+  display: flex;
+  justify-content: center;
+  gap: 5px; /* Jarak antar kursi */
+}
+
+.seat {
+  width: 5px; /* Lebar kursi */
+  height: 5px; /* Tinggi kursi */
+  line-height: 5px; /* Center text secara vertikal */
+  text-align: center;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: skewX(-20deg); /* Rotasi kursi */
+}
+
+.occupied {
+  background-color: #ff8080; /* Warna kursi yang sudah dipesan */
+  color: #fff; /* Warna teks untuk kursi yang sudah dipesan */
+}
+
+.selected {
+  background-color: #40bf80; /* Warna kursi yang dipilih */
+  color: #fff; /* Warna teks untuk kursi yang dipilih */
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
