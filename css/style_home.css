@@ -104,12 +104,26 @@ body {
   border-color: rgba(32, 120, 32, 0.8); /* Warna border tombol saat dihover */
 }
 
-/* Gaya untuk footer */
-footer {
-  background-color: #f8f9fa;
-  padding: 1rem 0;
-}
 
 .bg-body-tertiary {
   color: white;
+}
+/* Mengatur ukuran gambar sosial media di footer */
+.sosmed img {
+  width: 5px; /* Sesuaikan dengan lebar yang diinginkan */
+  height: auto; /* Biarkan tinggi otomatis agar proporsional */
+}
+footer {
+  background-image: url('img/home_backgorund.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white; /* Agar teks tetap terlihat dengan jelas */
+  padding: 1rem 0;
+}
+.footer-links {
+  background-image: url('img/home_backgorund.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem; /* Sesuaikan padding sesuai kebutuhan */
+  color: white; /* Agar teks tetap terlihat dengan jelas */
 }
