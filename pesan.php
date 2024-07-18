@@ -20,6 +20,10 @@ if (isset($_GET['filmId'])) {
         $filmTitle = htmlspecialchars($film['title']);
         $filmDescription = htmlspecialchars($film['description']);
         $filmImage = htmlspecialchars($film['image']);
+        $filmDurasi = htmlspecialchars($film['durasi']);
+        $filmTrailer = htmlspecialchars($film['trailer_url'])
+        
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -72,6 +76,30 @@ if (isset($_GET['filmId'])) {
             margin-right: 10%;
             word-wrap: break-word;
         }
+        .button-trailer {
+        display: flex;
+        align-items: center;
+        margin-top:28%;
+        }
+        .button-trailer h5 {
+        font-weight:bold;
+        }
+        .play-button {
+            display: inline-block;
+            width: 50px; /* Sesuaikan ukuran gambar play-button.png */
+            height: 50px; /* Sesuaikan ukuran gambar play-button.png */
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            margin-right: 10px; 
+        }
+
+        .play-button img {
+            width: 100%;
+            height: auto;
+            margin-top:-10%;
+        }
+
         .form-control {
             width: 100%;
             padding: 10px;
@@ -134,6 +162,13 @@ if (isset($_GET['filmId'])) {
             <div class="film-details">
                 <h2><?= $filmTitle ?></h2>
                 <p><?= $filmDescription ?></p>
+                <div class="button-trailer">
+                    <a href="<?= $filmTrailer ?>" target="_blank" class="play-button">
+                        <img src="img\play-button.png" alt="Play Trailer">
+                    </a>
+                    <h5>TONTON TRAILER |  </h5>
+                    <h5> <?= $filmDurasi ?></h5>
+                </div>
             </div>
         </div>
         <form id="orderForm" action="proses_pesan.php" method="post">
@@ -183,3 +218,4 @@ if (isset($_GET['filmId'])) {
     echo "<p>Film tidak ditemukan.</p>";
 }
 ?>
+    
