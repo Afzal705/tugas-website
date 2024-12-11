@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $stmt = $pdo->prepare("SELECT * FROM users WHERE username = :username AND password = :password");
         $stmt->execute(['username' => $username, 'password' => $password]);
         $user = $stmt->fetch();
-        if($username == 'admin' && $password == '123'){
+        if($username == 'admin' && $password == '12345'){
             header("Location: admin.html");
         }else if ($user) {
             $_SESSION['username'] = $user['username'];
