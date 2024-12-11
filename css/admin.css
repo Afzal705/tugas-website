@@ -17,7 +17,7 @@ header {
 }
 
 .sidebar {
-    background-color: purple;
+    background-color: purple; /* warna ungu */
     padding: 1em;
     width: 250px;
     min-height: 100vh;
