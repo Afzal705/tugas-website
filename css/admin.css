@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: green;
 }
 
 header {
@@ -17,7 +17,7 @@ header {
 }
 
 .sidebar {
-    background-color: #444;
+    background-color: purple; /* warna ungu */
     padding: 1em;
     width: 250px;
     min-height: 100vh;
